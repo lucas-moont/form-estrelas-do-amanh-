@@ -1,0 +1,36 @@
+aside {
+  padding: 64px;
+  background-color: $surface-secondary;
+  width: 50%;
+
+  .starsOfTomorrowTitle{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Schoolbell", cursive;
+    margin: 0 0 16px;
+  }
+
+  h1{
+    font-size: 2.5rem;
+    line-height: 1.25em;
+    margin-bottom: 8px;
+  }
+
+  .subheading{
+    margin-bottom: 32px;
+  }
+
+  img{
+    max-width: 100%;
+    width: 320px;
+    text-align: center;
+    object-position: center;
+  }
+
+  .illustrationWrapper{
+    text-align: center;
+  }
+}
