@@ -1,0 +1,56 @@
+#registrationForm{
+  padding: 32px 0;
+
+  fieldset{
+    border: 0;
+  }
+
+  legend{
+    display: none;
+  }
+
+  input,
+  select,
+  textarea{
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid $stroke-default;
+    border-radius: 8px;
+    transition: 0.5s;
+    
+    &:focus{
+      border-color: $stroke-highlight;
+      outline: none;
+      box-shadow: 0 0 5px $surface-secondary;
+    }
+  }
+
+  textarea{
+    height: 100px;
+    resize: vertical;
+  }
+
+  fieldset{
+    label {
+      &:not(:first-of-type){
+        display: block;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  #birthCertificate{
+    display: none;
+  }
+
+  .birthCertificateUploadBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    padding: 28px;
+    border: 3px dashed $stroke-default;
+    border-radius: 8px;
+  }
+}
