@@ -3,6 +3,10 @@
 
   fieldset{
     border: 0;
+
+    &:not(:first-of-type){
+      margin-top: 32px;
+    }
   }
 
   legend{
@@ -52,5 +56,51 @@
     padding: 28px;
     border: 3px dashed $stroke-default;
     border-radius: 8px;
+    transition: 0.5s;
+
+    svg path{
+      transition: 0.5s;
+    }
+
+    &:hover{
+      color: $brand-light;
+      border-color: $brand-light;
+
+      svg path{
+        stroke: $brand-light !important;
+      }
+    }
+  }
+}
+
+.inputGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "area1 area1 area1"
+    "area2 area2 area3"
+    "area4 area4 area5";
+  gap: 0 32px;
+
+  label{
+    &:first-of-type{
+      grid-area: area1;
+    }
+
+    &:nth-child(2){
+      grid-area: area2;
+    }
+
+    &:nth-child(3){
+      grid-area: area3;
+    }
+
+    &:nth-child(4){
+      grid-area: area4;
+    }
+
+    &:nth-child(5){
+      grid-area: area5;
+    }
   }
 }
