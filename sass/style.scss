@@ -2,17 +2,21 @@
 @import './base/resets';
 @import './base/main';
 @import './base/button.scss';
-@import './components/registration';
 @import './base/body';
+
 @import './components/aside';
 @import './components/legend';
 @import './components/full_width_element.scss';
 @import './components/back_link';
+@import './components/readonly_inputs.scss';
+@import './components/registration';
+@import './components/terms_acceptance.scss';
+
 @import './texts/text-highlight';
 @import './texts/text-secondary';
-@import './components/readonly_inputs.scss';
 @import './texts/text-tertiary';
 @import './texts/text-primary.scss';
+
 @import './pages/registration/registrationMain';
 @import './pages/registration/form';
 @import './base/label.scss';
