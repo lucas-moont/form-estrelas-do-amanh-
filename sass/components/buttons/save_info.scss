@@ -1,0 +1,8 @@
+.saveInfoBtn {
+  background-color: $surface-primary;
+  color: $brand-dark;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

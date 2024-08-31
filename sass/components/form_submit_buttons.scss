@@ -1,0 +1,22 @@
+.formSubmitButtons{
+  display: flex;
+  margin-top: 32px;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+
+  button,
+  input[type='submit']{
+    border: 1px solid $brand-dark !important;
+    height: 48px;
+    width: 183px;
+    border-radius: 8px;
+    margin-top: 0 !important;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}

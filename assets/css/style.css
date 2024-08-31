@@ -93,6 +93,44 @@ aside .illustrationWrapper {
   gap: 4px;
 }
 
+.formSubmitButtons {
+  display: flex;
+  margin-top: 32px;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.formSubmitButtons button,
+.formSubmitButtons input[type=submit] {
+  border: 1px solid #E43A12 !important;
+  height: 48px;
+  width: 183px;
+  border-radius: 8px;
+  margin-top: 0 !important;
+  font-size: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.saveInfoBtn {
+  background-color: #FFF;
+  color: #E43A12;
+}
+.saveInfoBtn:hover {
+  transform: translateY(-8px);
+}
+
+.submitInfoBtn {
+  background-color: #E43A12;
+  color: #FFF;
+}
+.submitInfoBtn:hover {
+  transform: translateY(-8px);
+}
+
 .textHighlight {
   color: #E43A12;
 }

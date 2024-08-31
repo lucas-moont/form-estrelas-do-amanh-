@@ -1,0 +1,8 @@
+.submitInfoBtn {
+  background-color: $brand-dark;
+  color: $surface-primary;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
