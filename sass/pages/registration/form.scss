@@ -90,7 +90,7 @@
     border-radius: 8px;
     display: flex !important;
     margin-top: 0 !important;
-    height: 158px;
+    height: 138px;
     align-items: center !important;
     justify-content: center !important;
     position: relative;
@@ -100,11 +100,28 @@
 
     .checkRadioBtn{
       position: absolute;
-      top: 16px;
-      left: 16px;
+      top: 8px;
+      left: 8px;
       border: 1px solid $stroke-highlight;
       border-radius: 50%;
+
+      path{
+        fill: #FFF;
+      }
     }
+
+    .checkRadioBtn.active{
+      path{
+        fill: $stroke-highlight;
+      }
+    }
+  }
+
+  .radioInputGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
   }
 }
 

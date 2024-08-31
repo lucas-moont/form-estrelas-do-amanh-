@@ -1,1 +1,244 @@
-*{box-sizing:border-box;margin:0;padding:0;color:#292524;font-family:"Poppins",sans-serif}a{text-decoration:none}main{width:50%;max-height:100vh;overflow-y:scroll;padding:32px}button{border:0;background-color:rgba(0,0,0,0);cursor:pointer}body{display:flex;height:100vh}aside{padding:32px;background-color:#fee7d6;width:50%}aside .starsOfTomorrowTitle{display:flex;align-items:center;gap:8px;font-size:20px;font-weight:600;font-family:"Schoolbell",cursive;margin:0 0 16px}aside h1{font-size:2.5rem;line-height:1.25em;margin-bottom:8px}aside .subheading{margin-bottom:32px}aside img{max-width:100%;width:350px;text-align:center;object-position:center}aside .illustrationWrapper{text-align:center}.legend{font-weight:600;margin-bottom:32px}.fullWidthElement{width:100%}.backLink{display:inline-flex;align-items:center;gap:8px}.textHighlight{color:#e43a12}.textSecondary{color:#57534e}.readonlyInput{background-color:#d6d3d1 !important;box-shadow:none !important;border-color:#d6d3d1 !important}.textTertiary{color:#8f8881 !important}.textPrimary{color:#292524 !important}.registrationMain h2{font-size:1.5rem;margin:16px 0 8px}#registrationForm{padding:32px 0}#registrationForm fieldset{border:0}#registrationForm fieldset:not(:first-of-type){margin-top:32px}#registrationForm legend{display:none}#registrationForm input,#registrationForm select,#registrationForm textarea{padding:10px;margin-top:4px;border:1px solid #d6d3d1;border-radius:8px;transition:.5s}#registrationForm input:focus,#registrationForm select:focus,#registrationForm textarea:focus{border-color:#f3541c;outline:none;box-shadow:0 0 5px #fee7d6}#registrationForm textarea{height:100px;resize:vertical}#registrationForm fieldset label:not(:first-of-type){display:block;margin-top:16px}#registrationForm #birthCertificate{display:none}#registrationForm .birthCertificateUploadBtn{display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:4px;padding:28px;border:3px dashed #d6d3d1;border-radius:8px;transition:.5s}#registrationForm .birthCertificateUploadBtn svg path{transition:.5s}#registrationForm .birthCertificateUploadBtn:hover{color:#f67841;border-color:#f67841}#registrationForm .birthCertificateUploadBtn:hover svg path{stroke:#f67841 !important}#registrationForm .twoInputButtonsFlex{margin-top:8px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}#registrationForm .twoInputButtonsFlex .radioBtn{flex-basis:calc(50% - 16px);min-width:250px}#registrationForm label.radioBtn{border:1px solid #d6d3d1;border-radius:8px;display:flex !important;margin-top:0 !important;height:158px;align-items:center !important;justify-content:center !important;position:relative;display:flex;flex-direction:column;gap:8px}#registrationForm label.radioBtn .checkRadioBtn{position:absolute;top:16px;left:16px;border:1px solid #f3541c;border-radius:50%}.optionsTitle{font-size:.875rem;margin:0}.inputGrid{display:grid;grid-template-columns:repeat(3, 1fr);grid-template-areas:"area1 area1 area1" "area2 area2 area3" "area4 area4 area5";gap:0 32px}.inputGrid label:first-of-type{grid-area:area1}.inputGrid label:nth-child(2){grid-area:area2}.inputGrid label:nth-child(3){grid-area:area3}.inputGrid label:nth-child(4){grid-area:area4}.inputGrid label:nth-child(5){grid-area:area5}label{color:#8f8881}/*# sourceMappingURL=style.css.map */
+/*COLORS*/
+/*BRAND*/
+/*TEXTS*/
+/*SURFACE*/
+/*STROKE*/
+/**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #292524;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 50%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 32px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  padding: 32px;
+  background-color: #FEE7D6;
+  width: 50%;
+}
+aside .starsOfTomorrowTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Schoolbell", cursive;
+  margin: 0 0 16px;
+}
+aside h1 {
+  font-size: 2.5rem;
+  line-height: 1.25em;
+  margin-bottom: 8px;
+}
+aside .subheading {
+  margin-bottom: 32px;
+}
+aside img {
+  max-width: 100%;
+  width: 350px;
+  text-align: center;
+  object-position: center;
+}
+aside .illustrationWrapper {
+  text-align: center;
+}
+
+.legend {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.fullWidthElement {
+  width: 100%;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.textHighlight {
+  color: #E43A12;
+}
+
+.textSecondary {
+  color: #57534E;
+}
+
+.readonlyInput {
+  background-color: #D6D3D1 !important;
+  box-shadow: none !important;
+  border-color: #D6D3D1 !important;
+}
+
+.textTertiary {
+  color: #8F8881 !important;
+}
+
+.textPrimary {
+  color: #292524 !important;
+}
+
+.registrationMain h2 {
+  font-size: 1.5rem;
+  margin: 16px 0 8px;
+}
+
+#registrationForm {
+  padding: 32px 0;
+}
+#registrationForm fieldset {
+  border: 0;
+}
+#registrationForm fieldset:not(:first-of-type) {
+  margin-top: 32px;
+}
+#registrationForm legend {
+  display: none;
+}
+#registrationForm input,
+#registrationForm select,
+#registrationForm textarea {
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #D6D3D1;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+#registrationForm input:focus,
+#registrationForm select:focus,
+#registrationForm textarea:focus {
+  border-color: #F3541C;
+  outline: none;
+  box-shadow: 0 0 5px #FEE7D6;
+}
+#registrationForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+#registrationForm fieldset label:not(:first-of-type) {
+  display: block;
+  margin-top: 16px;
+}
+#registrationForm #birthCertificate {
+  display: none;
+}
+#registrationForm .birthCertificateUploadBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  padding: 28px;
+  border: 3px dashed #D6D3D1;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+#registrationForm .birthCertificateUploadBtn svg path {
+  transition: 0.5s;
+}
+#registrationForm .birthCertificateUploadBtn:hover {
+  color: #F67841;
+  border-color: #F67841;
+}
+#registrationForm .birthCertificateUploadBtn:hover svg path {
+  stroke: #F67841 !important;
+}
+#registrationForm .twoInputButtonsFlex {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+#registrationForm .twoInputButtonsFlex .radioBtn {
+  flex-basis: calc(50% - 16px);
+  min-width: 250px;
+}
+#registrationForm label.radioBtn {
+  border: 1px solid #D6D3D1;
+  border-radius: 8px;
+  display: flex !important;
+  margin-top: 0 !important;
+  height: 138px;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#registrationForm label.radioBtn .checkRadioBtn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border: 1px solid #F3541C;
+  border-radius: 50%;
+}
+#registrationForm label.radioBtn .checkRadioBtn path {
+  fill: #FFF;
+}
+#registrationForm label.radioBtn .checkRadioBtn.active path {
+  fill: #F3541C;
+}
+#registrationForm .radioInputGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.optionsTitle {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "area1 area1 area1" "area2 area2 area3" "area4 area4 area5";
+  gap: 0 32px;
+}
+.inputGrid label:first-of-type {
+  grid-area: area1;
+}
+.inputGrid label:nth-child(2) {
+  grid-area: area2;
+}
+.inputGrid label:nth-child(3) {
+  grid-area: area3;
+}
+.inputGrid label:nth-child(4) {
+  grid-area: area4;
+}
+.inputGrid label:nth-child(5) {
+  grid-area: area5;
+}
+
+label {
+  color: #8F8881;
+}
