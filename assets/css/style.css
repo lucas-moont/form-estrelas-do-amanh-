@@ -172,6 +172,7 @@ aside .illustrationWrapper {
   border: 1px solid #D6D3D1;
   border-radius: 8px;
   transition: 0.5s;
+  appearance: none;
 }
 #registrationForm input:focus,
 #registrationForm select:focus,
@@ -179,6 +180,11 @@ aside .illustrationWrapper {
   border-color: #F3541C;
   outline: none;
   box-shadow: 0 0 5px #FEE7D6;
+}
+#registrationForm select {
+  background-image: url("../images/arrow-down-01.svg");
+  background-position: calc(100% - 8px) center;
+  background-repeat: no-repeat;
 }
 #registrationForm textarea {
   height: 100px;
