@@ -213,9 +213,9 @@
           <p class="legend" style="margin-bottom: 16px">Opções de matrícula</p>
           <p class="optionsTitle textTertiary">Selecione o turno de estudo</p>
           <div class="twoInputButtonsFlex">
-            <label class="radioBtn">
+            <label for="manhã" class="radioBtn">
               <svg
-                class="checkRadioBtn active"
+                class="checkRadioBtn"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -231,10 +231,11 @@
               </svg>
               <input
                 type="radio"
-                checked
+              
                 hidden
                 name="studyShift"
                 value="manhã"
+                id="manhã"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +265,7 @@
               </svg>
               Manhã
             </label>
-            <label class="radioBtn">
+            <label for="tarde" class="radioBtn">
               <svg
                 class="checkRadioBtn"
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +281,7 @@
                   fill="#F3541C"
                 />
               </svg>
-              <input type="radio" hidden name="studyShift" value="tarde" />
+              <input type="radio" hidden name="studyShift" id="tarde" value="tarde" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48"
@@ -314,7 +315,7 @@
           <div class="radioInputGrid">
             <label class="radioBtn">
               <svg
-                class="checkRadioBtn active"
+                class="checkRadioBtn"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -328,7 +329,7 @@
                   fill="#F3541C"
                 />
               </svg>
-              <input type="radio" checked hidden name="sport" value="futebol" />
+              <input type="radio" hidden name="sport" value="futebol" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48"

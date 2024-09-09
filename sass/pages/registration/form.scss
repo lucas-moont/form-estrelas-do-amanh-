@@ -1,60 +1,60 @@
-#registrationForm{
+#registrationForm {
   padding: 32px 0;
 
-  fieldset{
+  fieldset {
     border: 0;
 
-    &:not(:first-of-type){
+    &:not(:first-of-type) {
       margin-top: 32px;
     }
   }
 
-  legend{
+  legend {
     display: none;
   }
 
   input,
   select,
-  textarea{
+  textarea {
     padding: 10px;
     margin-top: 4px;
     border: 1px solid $stroke-default;
     border-radius: 8px;
     transition: 0.5s;
     appearance: none;
-    
-    &:focus{
+
+    &:focus {
       border-color: $stroke-highlight;
       outline: none;
       box-shadow: 0 0 5px $surface-secondary;
     }
   }
 
-  select{
-    background-image: url('../images/arrow-down-01.svg');
+  select {
+    background-image: url("../images/arrow-down-01.svg");
     background-position: calc(100% - 8px) center;
     background-repeat: no-repeat;
   }
 
-  textarea{
+  textarea {
     height: 100px;
     resize: vertical;
   }
 
-  fieldset{
+  fieldset {
     label {
-      &:not(:first-of-type){
+      &:not(:first-of-type) {
         display: block;
         margin-top: 16px;
       }
     }
   }
 
-  #birthCertificate{
+  #birthCertificate {
     display: none;
   }
 
-  .birthCertificateUploadBtn{
+  .birthCertificateUploadBtn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,34 +65,34 @@
     border-radius: 8px;
     transition: 0.5s;
 
-    svg path{
+    svg path {
       transition: 0.5s;
     }
 
-    &:hover{
+    &:hover {
       color: $brand-light;
       border-color: $brand-light;
 
-      svg path{
+      svg path {
         stroke: $brand-light !important;
       }
     }
   }
 
-  .twoInputButtonsFlex{
+  .twoInputButtonsFlex {
     margin-top: 8px;
     display: flex;
     align-items: center;
     gap: 32px;
     flex-wrap: wrap;
 
-    .radioBtn{
+    .radioBtn {
       flex-basis: calc(50% - 16px);
       min-width: 250px;
     }
   }
 
-  label.radioBtn{
+  label.radioBtn {
     border: 1px solid $stroke-default;
     border-radius: 8px;
     display: flex !important;
@@ -105,26 +105,28 @@
     flex-direction: column;
     gap: 8px;
 
-    .checkRadioBtn{
+    .checkRadioBtn {
       position: absolute;
       top: 8px;
       left: 8px;
       border: 1px solid $stroke-highlight;
       border-radius: 50%;
 
-      path{
-        fill: #FFF;
+      path {
+        fill: #fff;
       }
     }
 
-    .checkRadioBtn.active{
-      path{
-        fill: $stroke-highlight;
+    &:has(input[type="radio"]:checked) {
+      .checkRadioBtn {
+        path {
+          fill: $stroke-highlight !important;
+        }
       }
     }
   }
 
-  .radioInputGrid{
+  .radioInputGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 16px;
@@ -132,38 +134,38 @@
   }
 }
 
-.optionsTitle{
+.optionsTitle {
   font-size: 0.875rem;
   margin: 0;
 }
 
-.inputGrid{
+.inputGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "area1 area1 area1"
     "area2 area2 area3"
     "area4 area4 area5";
   gap: 0 32px;
 
-  label{
-    &:first-of-type{
+  label {
+    &:first-of-type {
       grid-area: area1;
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       grid-area: area2;
     }
 
-    &:nth-child(3){
+    &:nth-child(3) {
       grid-area: area3;
     }
 
-    &:nth-child(4){
+    &:nth-child(4) {
       grid-area: area4;
     }
 
-    &:nth-child(5){
+    &:nth-child(5) {
       grid-area: area5;
     }
   }
