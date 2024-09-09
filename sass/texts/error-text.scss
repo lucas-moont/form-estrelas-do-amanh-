@@ -1,0 +1,13 @@
+.errorText{
+  color: $semantic-error;
+  font-size: 0.75rem;
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+input{
+  &:valid + .errorText{
+    display: none;
+  }
+}
